@@ -1,7 +1,7 @@
 {% load static%}
 
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,14 +16,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{% static "deps/favicon/favicon-32x32.png" %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static "deps/favicon/favicon-16x16.png" %}">
 <link rel="manifest" href="{% static "deps/favicon/site.webmanifest" %}">
-    <title>Home</title>
+    <title>Основна сторінка</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Home</a>
+                <a class="navbar-brand" href="index.html">Основна сторінка</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  text-white" href="carts/cart.html">Корзина</a>
+                            <a class="nav-link  text-white" href="carts/cart.html">Кошик</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  text-white" href="users/login.html">Увійти</a>
@@ -54,7 +54,7 @@
                                 Мій профіль
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item  text-white" href="carts/cart.html">Корзина</a></li>
+                                <li><a class="dropdown-item  text-white" href="carts/cart.html">Кошик</a></li>
                                 <li><a class="dropdown-item  text-white" href="users/profile.html">Особистий кабінет</a>
                                 </li>
                                 <li><a class="dropdown-item  text-white" href="#">Адмін панель</a></li>
@@ -75,7 +75,7 @@
     </header>
     <section>
         <div class="container">
-            <!-- Каталог та корзина з фіксованим положенням на сторінці -->
+            <!-- Каталог и корзина с фиксированным расположением на странице -->
             <div class="row mt-1 position-fixed z-3">
                 <!-- Каталог -->
                 <div class="dropdown mb-2">
@@ -95,7 +95,7 @@
                         <li><a class="dropdown-item text-white" href="goods/catalog.html">Смаколики для очищення зубів</a></li>
                     </ul>
                 </div>
-                <!-- Піктограма корзини, викликає модальне вікно -->
+                <!-- Значек корзины, вызывает модальное окно -->
                 <div>
                     <button type="button" class="btn btn-dark btn-secondary d-flex" id="modalButton"
                         aria-expanded="false">
@@ -104,7 +104,7 @@
                         <span id="goods-in-cart-count">0</span>
                     </button>
                 </div>
-                <!-- Размітка модального вікна корзини -->
+                <!-- Разметка модального окна корзины -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable">
@@ -114,12 +114,12 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <h3 class="text-center mb-4">Корзина</h3>
+                                <h3 class="text-center mb-4">Кошик</h3>
                                 <div class="container" id="cart-items-container">
-                                    <!-- Розмітка корзини -->
+                                    <!-- Разметка корзины -->
                                     <div class="card mb-3 text-bg-light shadow-lg">
                                         <div class="card-header">
-                                            <h5 class="card-title">Товар</h5>
+                                            <h5 class="card-title">Продукція</h5>
                                         </div>
                                         <ul class="list-group list-group-flush">
                                             <li class="list-group-item">
@@ -144,7 +144,7 @@
                                                     <div class="col p-0"><strong>100.00 $</strong></div>
                                                     <div class="col p-0">
                                                         <a href="#" class="remove-from-cart" data-cart-id="">
-                                                            <img class="mx-1" src="{% static "deps/icons/trash3-fill.svg" %}"
+                                                            <img class="{% static "deps/icons/trash3-fill.svg" %}"
                                                                 alt="Catalog Icon" width="16" height="16">
                                                         </a>
                                                     </div>
@@ -154,11 +154,11 @@
                                     </div>
                                     <div class="card mb-3 shadow-lg">
                                         <div class="card-footer">
-                                            <p class="float-left">Итого <strong>1</strong> товар(ів) на суму</p>
+                                            <p class="float-left">Усього <strong>1</strong> товар(ів) на суму</p>
                                             <h4 class="float-left"><strong>100.00 $</strong></h4>
                                         </div>
                                     </div>
-                                    <!-- Закінчилась размітка корзини -->
+                                    <!-- Закончилась разметка корзины -->
                                 </div>
                                 <a class="btn btn-dark" href="orders/create_order.html">
                                     Оформити замовлення
@@ -167,18 +167,31 @@
                         </div>
                     </div>
                 </div>
-                <!-- Закінчилась розмітка модального вікна -->
+                <!-- Закончилась разметка модального окна -->
             </div>
         </div>
         <!-- Контент -->
         <div class="container">
             <div class="row mt-1">
                 <div class="col-lg-2">
-                    <!-- Пустий блок на Ваш погляд -->
-                </div>
+                  </div>
+                <!-- Пустой блок на Ваше усмотрение -->
                 <div class="col-lg-10">
-                    <!-- Контент на сторінці -->
-                    <h1 class="mt-5 pt-5"><strong>Магазин смаколиків для УСІХ</strong></h1>
+                    <!-- Контент на странице -->
+                    <style>
+                        .text-outline {
+                          color: white; /* Колір заголовка */
+                          text-shadow: 
+                            -1px -1px 0 #000,  
+                            1px -1px 0 #000,
+                            -1px 1px 0 #000,
+                            1px 1px 0 #000;
+                        }
+                      </style>
+                    </head>
+                    <body>
+                      <div class="container">
+                        <h1 class="mt-10 pt-5 text-white text-outline"><strong>Магазин смаколиків для УСІХ</strong></h1>
                 </div>
             </div>
         </div>
@@ -191,7 +204,7 @@
     <script src="{% static "deps/js/jquery/jquery-3.7.0.min.js" %}"></script>
     <script src="{% static "deps/js/jquery-events.js" %}"></script>
     <script src="{% static "deps/js/jquery-ajax.js" %}"></script>
-<script src="{% static "deps/js/bootstrap/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "deps/js/bootstrap/bootstrap.bundle.min.js" %}"></script>
 </body>
 
 </html>
