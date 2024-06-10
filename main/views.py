@@ -1,21 +1,27 @@
-from typing import Any
 from django.http import HttpResponse
 from django.shortcuts import render
 
 
 def index(request):
-    context: dict[str, Any] = {
-        'title': 'Home',
-        'content': 'Це головна сторінка магазину- HOME',
-        'list': ['first, second'],
-        'dict': {'first': 1},
-        'is_authenticated': False
-                 
+    context: dict[str, str] = {
+        'title': 'Головна',
+        'content': 'Це головна сторінка магазину ласощі',
+        
+      
     }
 
     return render(request, 'main/index.html', context)
 
 
 def about(request):
-    return HttpResponse('About page')
+    context: dict[str, str] = {
+        'title': 'Головна про Нас',
+        'content': 'Це про нас',
+        'text_on_page': "Тут усе що потрібно сказати"
+        
+      
+    }
+
+    return render(request, 'main/about.html', context)
+ 
  
