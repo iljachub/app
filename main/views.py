@@ -23,5 +23,16 @@ def about(request):
     }
 
     return render(request, 'main/about.html', context)
+
+def about(request):
+    context: dict[str, str] = {
+        'title': 'Як нас знайти',
+        'content': 'Наші контакти',
+        'text_on_page': "На сьогоднішній час ми не маємо свого магазину, але ми обов'зково зробимо його. Зв'язатися з нами можна за тел.0999639679 "
+        
+      
+    }
+
+    return render(request, 'main/about.html', context)
  
  

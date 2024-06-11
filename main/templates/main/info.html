@@ -1,0 +1,32 @@
+{% extends "main/base.html" %}
+{% load static%}
+
+{% block css %}
+     <link rel="stylesheet" href="{% static "deps/css/my_footer_css.css" %}">
+{% endblock  %}
+
+
+{% block content %}
+  <div>
+    <head>
+      <style>
+      .text-outline {
+        color: white; /* Колір заголовка */
+        text-shadow: 
+          -1px -1px 0 #000,  
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+        }
+      </style>
+    </head>
+ <body>
+    <div class="container">
+        <h2 class="mt-52 pt-5 text-white text-outline"><strong>{{ content }}</strong></h2>
+        <p class="mt-10 pt-5 text-white text-outline">{{ text_on_page }}</p>
+ </body>       
+</div>    
+{% endblock  %}
+
+{% block footer %}
+<footer class="py-4 bg-dark">
