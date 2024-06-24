@@ -88,13 +88,9 @@
                             height="16">
                     </button>
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Усі товари</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Смаколики курятина</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Смаколики телятина</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Смаколики баранина</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Смаколики індичка</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Смаколики на довгий час</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Смаколики для очищення зубів</a></li>
+                        {% for Category in Categories  %}
+                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">{{Category.name}}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <!-- Значек корзины, вызывает модальное окно -->

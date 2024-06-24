@@ -12,6 +12,9 @@ class categories(models.Model):
         verbose_name = 'Категорію'
         verbose_name_plural = 'Категорії'
 
+    def __str__(self):
+        return self.name
+
 
 class Products(models.Model):
     name = models.CharField(max_length=150, unique=True, verbose_name='Назва')
@@ -19,7 +22,7 @@ class Products(models.Model):
     description = models.TextField(blank=True, null=True, verbose_name='Опис')
     image = models.ImageField(upload_to='goods_images', blank=True, null=True, verbose_name= "Як виглядає товар" )
     price = models.DecimalField(default=0.00, max_digits=7, decimal_places=2, verbose_name= "Ціна")
-    discount = models.DecimalField(default=0.00, max_digits=7, decimal_places=2, verbose_name= "Знижка у %")
+    discount = models.DecimalField(default=0.00, max_digits=4, decimal_places=2, verbose_name= "Знижка у %")
     quantity= models.PositiveIntegerField(default=0, verbose_name= "Кількість")
     categories = models.ForeignKey(to=categories, on_delete=models.CASCADE, verbose_name= "Категорія")
 
@@ -28,4 +31,8 @@ class Products(models.Model):
         db_table = 'product'
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукти'
+        
+    def __str__(self):
+        return f'{self.name} Кількість - {self.quantity}'
+    
 
