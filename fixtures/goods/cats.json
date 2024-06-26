@@ -1,0 +1,42 @@
+[
+    {
+        "model": "goods.categories",
+        "pk": 5,
+        "fields": {
+            "name": "Усі товари",
+            "slug": "all"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 10,
+        "fields": {
+            "name": "Смаколики на довгий час",
+            "slug": "smakoliki-na-dovgij-chas"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 12,
+        "fields": {
+            "name": "Смаколики з м'яса",
+            "slug": "smakoliki-z-myasa"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 13,
+        "fields": {
+            "name": "Смаколики з субпродуктів",
+            "slug": "smakoliki-z-subproduktiv"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 14,
+        "fields": {
+            "name": "Смаколики для власників собак",
+            "slug": "smakoliki-dlya-vlasnikiv-sobak"
+        }
+    }
+]
