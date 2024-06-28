@@ -6,12 +6,12 @@ from goods.models import categories
 
 def index(request):
 
-    Categories  = categories.objects.all()
+    
 
     context: dict[str, str] = {
         'title': 'Головна',
         'content': 'Це головна сторінка магазину ласощі',
-        'Categories': Categories
+        
         
       
     }
