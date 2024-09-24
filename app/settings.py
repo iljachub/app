@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 
+from django.conf.global_settings import MEDIA_ROOT, MEDIA_URL
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -108,13 +110,46 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uk'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
 USE_TZ = True
+
+
+CMS_LANGUAGES = {
+## Customize this
+'default': {
+    'public': True,
+    'hide_untranslated': False,
+    'redirect_on_fallback': True,
+},
+1: [
+    {
+        'name': 'Русский',
+        'public': True,
+        'hide_untranslated': False,
+        'redirect_on_fallback': True,
+        'code': 'ru',
+    },
+    {
+        'name': 'Українська',
+        'public': True,
+        'hide_untranslated': False,
+        'redirect_on_fallback': True,
+        'code': 'uk',
+    },
+    {
+        'name': 'English',
+        'public': True,
+        'hide_untranslated': False,
+        'redirect_on_fallback': True,
+        'code': 'en',
+    },
+],
+}
 
 
 # Static files (CSS, JavaScript, Images)
