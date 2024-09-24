@@ -1,0 +1,128 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 2,
+        "fields": {
+            "name": "Смаколики курка філе 100г.",
+            "slug": "kurka-file100g",
+            "description": "Смаколики з філейної частини курки. Без солі та спецій. Для вибагливих тварин та тих хто слідкує за вагою.",
+            "image": "goods_images/kurka_k28ChRZ.png",
+            "price": "90.00",
+            "discount": "0.00",
+            "quantity": 30,
+            "category": 10
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 3,
+        "fields": {
+            "name": "Смаколики курка філейна 100г.",
+            "slug": "kurka-filejna-100g",
+            "description": "Смаколики з філейної частини курки. Без солі та спецій. Для вибагливих тварин та тих хто слідкує за вагою.",
+            "image": "goods_images/kurka.png",
+            "price": "90.00",
+            "discount": "0.00",
+            "quantity": 30,
+            "category": 2
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 4,
+        "fields": {
+            "name": "Смаколики курочка 100г.",
+            "slug": "kurka-100g",
+            "description": "Ніжні чіпси з курячого м'яса.",
+            "image": "",
+            "price": "90.00",
+            "discount": "10.00",
+            "quantity": 20,
+            "category": 2
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 5,
+        "fields": {
+            "name": "Смаколики індичка 100г.",
+            "slug": "smakoliki-indichka-100g",
+            "description": "Смаколики з індичого м'яса, використовуємо індичі окороки, які більше соковиті (наприклад за м'ясо с грудинки) для собачок, які не переймаються за власну вагу :). Без солі та спецій.",
+            "image": "goods_images/indichka.png",
+            "price": "90.00",
+            "discount": "0.00",
+            "quantity": 20,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 6,
+        "fields": {
+            "name": "Смаколики телятинка 100г.",
+            "slug": "smakoliki-telyatinka-100g",
+            "description": "Смаколики з ошійної або задньої частини теляти.",
+            "image": "goods_images/teljatina_na_tarilci.png",
+            "price": "100.00",
+            "discount": "5.00",
+            "quantity": 15,
+            "category": 3
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 7,
+        "fields": {
+            "name": "Смаколики куряча печінка 100г.",
+            "slug": "smakoliki-kuryacha-pechinka-100g",
+            "description": "Смаколики з курячої печінки, для гурманів та перебірливих собак. Не бачили м'ясоїдну тваринку, яка би відмовилася від такої ласощі. Без солі та спецій.",
+            "image": "goods_images/pechinka_kurka.png",
+            "price": "80.00",
+            "discount": "15.00",
+            "quantity": 30,
+            "category": 2
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 8,
+        "fields": {
+            "name": "Смаколики телятинка зі спеціями 100г",
+            "slug": "smakoliki-telyatinka-zi-speciyami-100g",
+            "description": "Ошійок телячій. Смачні смаколики для людей. Невелика кількість спецій та солі зберігає чудовий смак м'яса. Беріть з собою на прогулянку з вашою собачкою, пригощайте друзів, беріть на роботу як перекус, чудовий засіб перекусити для тих хто багато часу знаходиться у важких умовах далеко від дому.",
+            "image": "",
+            "price": "100.00",
+            "discount": "5.00",
+            "quantity": 10,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 9,
+        "fields": {
+            "name": "Смаколики асорті 100г.",
+            "slug": "smakoliki-asorti-100g",
+            "description": "Куряча грудинка -три види спецій  (паприка, кунжут, теріяки соус), теляча вирізка, окіст свинячий. Смачні смаколики для людей. Невелика кількість спецій та солі зберігає чудовий смак м'яса. Беріть з собою на прогулянку з вашою собачкою, пригощайте друзів, беріть на роботу як перекус, чудовий засіб перекусити для тих хто багато часу знаходиться у важких умовах далеко від дому.",
+            "image": "goods_images/assorti.png",
+            "price": "95.00",
+            "discount": "5.00",
+            "quantity": 5,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 10,
+        "fields": {
+            "name": "Смаколики \"Кабаносі\" 100г.",
+            "slug": "smakoliki-kabanosi-100g",
+            "description": "Тоненькі ковбаски без оболонки на 100% зроблені з м'яса курочки та свинини з додаванням спецій та солі, на смак як відомі усім в'ялені ковбаски :)",
+            "image": "goods_images/kabanisi.png",
+            "price": "110.00",
+            "discount": "0.00",
+            "quantity": 14,
+            "category": 7
+        }
+    }
+]

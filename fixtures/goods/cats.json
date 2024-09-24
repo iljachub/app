@@ -1,0 +1,66 @@
+[
+    {
+        "model": "goods.categories",
+        "pk": 1,
+        "fields": {
+            "name": "Весь асортимент",
+            "slug": "all"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 2,
+        "fields": {
+            "name": "Смаколики курочка",
+            "slug": "smakoliki-kurochka"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 3,
+        "fields": {
+            "name": "Смаколики телятинка",
+            "slug": "smakoliki-telyatinka"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 4,
+        "fields": {
+            "name": "Смаколики барашок",
+            "slug": "smakoliki-barashok"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 5,
+        "fields": {
+            "name": "Смаколики індичка",
+            "slug": "smakoliki-indichka"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 6,
+        "fields": {
+            "name": "Смаколики на довгий час",
+            "slug": "smakoliki-na-dovgij-chas"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 7,
+        "fields": {
+            "name": "Смаколики зі спеціями як для себе",
+            "slug": "smakoliki-zi-speciyami-yak-dlya-sebe"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 10,
+        "fields": {
+            "name": "Дієтичні",
+            "slug": "diyetichni"
+        }
+    }
+]
