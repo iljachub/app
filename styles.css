@@ -1,0 +1,22 @@
+.my-class {
+  color: red;
+  font-size: 20px;
+}
+
+.pagination a {
+    color: black; /* Цвет текста */
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50; /* Цвет активной кнопки */
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd; /* Цвет кнопки при наведении */
+  }
+ 
+  
