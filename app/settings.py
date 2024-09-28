@@ -14,23 +14,12 @@ from pathlib import Path
 
 from django.conf.global_settings import MEDIA_ROOT, MEDIA_URL
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-rqfajx#^qe!wt5h7#(gg$l49$%4x_wzqmzg(l7-8!axm8z+$8*'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -86,12 +75,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+
 
 
 # Password validation
@@ -163,9 +147,6 @@ CMS_LANGUAGES = {
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS: list[Path] = [
-    BASE_DIR / 'static'
-    ]
 
 MEDIA_URL = 'media/'
 
@@ -181,3 +162,9 @@ INTERNAL_IPS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+try:
+    from.local_settings import *
+except ImportError:
+    from.prod_settings import *    
