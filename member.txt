@@ -1,0 +1,16 @@
+створити папку вірт. оточення
+/opt/alt/python38/bin/python3 -m virtualenv venv
+
+адмін права на папку вірт
+chmod +x venv/bin/activate
+
+Запускати термінал          Зупиняти
+source venv/bin/activate      deactivate
+
+
+
+Створити папку проєкту
+django-admin startproject app
+
+Запустити сервер
+python manage.py runserver
